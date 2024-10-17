@@ -96,7 +96,7 @@ const Footer = () => {
 
             </div>
 
-            <div className='bg-blue-600 py-2 text-center  my-2'>
+            <div className='bg-blue-600 py-2 text-center  mt-2'>
                 Ecommerce All Rights Reserved  © 2024.
             </div>
 
