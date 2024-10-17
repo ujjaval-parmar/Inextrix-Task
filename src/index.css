@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+  .line{
+    @apply w-full h-0.5 bg-white transition-all duration-300
+  }
+
+  .line-1.active{
+    @apply rotate-45 translate-y-2 origin-center
+  }
+
+  .line-2.active{
+    @apply w-0 transition-none
+  }
+
+  .line-3.active{
+    @apply   -rotate-45 -translate-y-3.5 origin-center
+  }
+
+  input, textarea{
+    @apply w-full p-2 border border-gray-400 focus:outline-blue-300 rounded-md
+  }
+
+  textarea{
+    @apply resize-none h-32
+  }
+
+  .submit-btn{
+    @apply bg-blue-500 text-white w-fit mx-auto px-3 py-2 uppercase tracking-wider font-semibold  hover:bg-blue-600 transition-all duration-300 rounded-xl
+  }
+
+  .stars{
+    @apply  text-red-500
+  }
+
+
+}
+
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+}
+
+.mySwiper .swiper-button-prev::after,
+.mySwiper .swiper-button-next::after {
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+
+}
+
+.mySwiper .swiper-button-prev::after,
+.mySwiper .swiper-button-next::after
+{
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+
+}
+
+@media (max-width:800px) {
+
+  .mySwiper .swiper-button-prev,
+  .mySwiper .swiper-button-next {
+     display: none;
+  }
+
+  .horizontalCardSwiper .swiper-button-prev,
+  .horizontalCardSwiper .swiper-button-next {
+     display: none;
+  }
+
+}
